@@ -1,0 +1,67 @@
+<html>
+<head><title>An Imperfect Elegy</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/jquery.fancybox.css">
+    </head>
+
+<body>
+    <header>
+        <h1><a href="index.html" id="home">An Imperfect Elegy</a></h1>
+        <h2>Maxwell LaBelle</h2>
+    </header>
+
+    <aside>
+    <nav>
+        <ul>
+        <div id="toggle">
+            <li><a href="index.html">the book</a></li>
+        </div>
+        <div id="chapters">
+        <li><a href="one.html" class="sequence">one</a></li>
+        <li><a href="two.html" class="sequence">two</a></li>
+        <li><a href="three.html" class="sequence">three</a></li>
+        <li><a href="four.html" class="sequence">four</a></li>
+        </div>
+        <li><a href="statement.html">artist statement</a></li>
+        <li><a id="activepage" href="purchase.html">purchase</a></li>
+        <li><a href="about.html">about / contact</a></li>
+        </ul>
+    </nav>
+    </aside>
+    
+    <section id="purchase">
+        <div id="blurb"><h3>An Imperfect Elegy</h3>
+        <h4>&#36;75.76</h4>
+        <p id="book-description">The lastest work of Max LaBelle for a project at Massachusetts College of Art and Design. All images in the book were taken with black and white film.</p>
+        <a data-fancybox data-type="iframe" href="http://www.blurb.com/bookstore/invited/7308052/9ef4cc2b8a88e30117a3ee439a9070908485d384" class="button-purchase">purchase</a>
+<!--        <a id="button" href="http://www.blurb.com/bookstore/invited/7308052/9ef4cc2b8a88e30117a3ee439a9070908485d384">purchase</a>-->
+        </div>
+        <div id="purchase-images">
+        <img id="big" src="images/filler.png" width="562" height="400">
+        <img id="small" src="images/filler-small.png" width="141" height="102">
+        <img id="small" src="images/filler-small.png" width="141" height="102">
+        <img id="small" src="images/filler-small.png" width="141" height="102"></div>
+    </section>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+    
+//$(document).ready(function(){
+//    $("#toggle").click(function(){
+//        $("#chapters").slideToggle("slow") ;
+//    });
+//});
+    
+$('[data-fancybox]').fancybox({
+  toolbar  : false,
+  smallBtn : true,
+  iframe : {
+    preload : false
+  }
+})
+
+</script>
+</body>
+</html>
