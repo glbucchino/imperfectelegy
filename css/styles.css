@@ -1,0 +1,208 @@
+/* ------- BASIC CSS ELEMENTS ------- */
+
+body {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 80px 80px repeat(6, 100px);
+    grid-template-areas: 
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main";
+}
+
+header {
+    margin: 30px;
+    grid-area: sidebar;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+aside {
+    grid-area: sidebar;
+    grid-row-start: 3;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 30px;
+    color: #4A4A4A;
+}
+
+#toggle:hover {
+    color: #3b99dc;
+}
+
+.sequence {
+    line-height: 30px;
+}
+
+#chapters {
+    padding: 10px;
+    display: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3b99dc;
+}
+
+a:active {
+    text-decoration: none;
+    font-weight: 200;
+    color: #3b99dc;
+}
+
+#home {
+    color: #000000;
+    font-weight: 700;
+}
+
+#activepage {
+    font-weight: 800;
+    color: #3b99dc;
+}
+
+
+
+/* ------- SLIDESHOW ------- */
+
+section {
+    grid-area: main;
+    margin: 30px auto;
+    margin-left: 20px;
+}
+
+.slideshow-buttons {
+    grid-area: sidebar;
+    grid-row: 7 / 9;
+    margin-top: 70px;
+    margin-left: 30px;
+    line-height: 30px;
+}
+
+button {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    border: none;
+}
+
+.slick-prev, .slick-next {
+    padding: 0;
+}
+
+button.slick-prev:hover {
+    text-decoration: none;
+    color: #3b99dc;
+}
+
+button.slick-next:hover {
+    text-decoration: none;
+    color: #3b99dc;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.cycle-slideshow {
+    width: 1000px;
+    height: 650px;
+    grid-area: main;
+    grid-row-start: 1;
+    margin: 50px auto;
+}
+
+.cycle-cell {
+    height: 100%;
+}
+
+
+
+
+
+/* ------- PURCHASE PAGE ------- */
+
+#blurb {
+    grid-area: main;
+    grid-row-start: 3;
+    width: 40%;
+    float: right;
+    line-height: 25px;
+    margin-right: 20px;
+}
+
+#purchase-images {
+    grid-area: main;
+    grid-row-start: 3;
+    width: 50%;
+    float: left;
+}
+
+#purchase {
+    grid-row-start: 3;
+    margin-top: 0;
+}
+
+#small {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+.button-purchase {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 15px 25px;
+    color: #FFFFFF;
+    background-color: #3b99dc;
+    border: 2px solid #3b99dc;
+    border-radius: 10px;
+}
+
+.button-purchase:hover, .button-purchase:active {
+    color: #FFFFFF;
+    background-color: #17527D;
+    border: 2px solid #17527D;
+}
+
+.button-purchase:visited {
+    color: #FFFFFF;
+}
+
+#book-description {
+    margin-bottom: 80px;
+}
+/*
+body, header, h1, h2, aside, nav, ul, li, a, section, img {
+    border: 2px solid red;
+}*/
